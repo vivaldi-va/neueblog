@@ -11,6 +11,7 @@ Character encoding reared its ugly head again soon after my last apparent fix,
 only to not be fixed at all in any way. I was forced to abandon my efforts to fix
 it to focus attention on more pressing issues so it remained in the shadows,
 though a persisting pain in my neck.
+
 <!--more-->
 
 However, due to increasing need for this to be a

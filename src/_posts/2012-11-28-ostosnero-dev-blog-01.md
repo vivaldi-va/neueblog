@@ -12,6 +12,7 @@ After many hours of trouble, I have finally figured out the issue with encoding 
 While the ISO Latin1 encoding worked partially, it only encoded static or pre-rendered content, not dynamic
 content such as that added through AJAX. I troubleshooted this at various points, changing the collation in
 the database to be uniform, first as latin1, then as Unicode.
+
 <!--more-->
 
 I then attempted to change the default encoding of the jQuery AJAX calls to latin1, again to no avail.

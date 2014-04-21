@@ -6,7 +6,9 @@ categories : [blog]
 
 
 Modern web development has moved on from notepad and simple HTML, it now encompasses a whole wealth of technologies built upon each other to deliver better, neater and faster end-results. Package and dependency management and task automation are the big players that can assist with anything from a small web page to a full blown web-app. I shall describe 4 of my favorite such tools which can provide the groundwork for setting up any kind of web project, with Yeoman setting up a bootstrap project, installing required tools with NPM and code libraries with Bower, then compiling your production version with Grunt.js. It’s really too easy.
+
 <!--more-->
+
 ##NPM
 NPM, or Node Package Manager, is the package manager offered by Node.js. Simply put, it is a great repository for all manner of development tools and utilities. Minification, concatenation, image optimisation, testing and also all the other tools I will mention herein, are installed using NPM. Node packages can be installed in two ways using NPM, either by installing as a local resource, or as a global program.
 
