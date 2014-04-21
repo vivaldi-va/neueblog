@@ -8,6 +8,13 @@
 		text-align: center;
 		text-transform: capitalize;
 
+		a {
+			color: inherit;
+			&:hover {
+				border: none;
+			}
+		}
+
 		&_HeadShot {
 			display: block;
 			max-width: 128px;
