@@ -1,0 +1,28 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font: 400 1.6rem/1.5 'Droid Sans';
+	color: $black;
+}
+
+a,
+a:link,
+a:visited {
+	color: $blue;
+	text-decoration: none;
+}
+
+.highlight {
+	background-color: #073642;
+	color: #93a1a1;
+	border: 1px solid #2d6472;
+
+	padding: 1em;
+	overflow-x: scroll;
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}

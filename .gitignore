@@ -51,7 +51,7 @@ tags
 
 # Packages
 node_modules/*
-src/bower_components/*
+src/_bower_components/*
 .tmp
 test/
 

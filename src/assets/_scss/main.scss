@@ -2,6 +2,9 @@
 The main SCSS file for everything, yep
 */
 
-@import "syntax";
+@import "variables";
+@import "structure";
+@import "typography";
+@import "solarized-dark";
 @import "header";
 @import "post";

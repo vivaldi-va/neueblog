@@ -1,6 +1,30 @@
 .header {
 	color: inherit;
 	&-SiteHeader {
+		margin: 3.2rem 0;
 		font-size: 2em;
+		font-weight: 400;
+		color: $red;
+		text-align: center;
+		text-transform: capitalize;
+	}
+
+	&-SiteBlurb {
+		display: block;
+		max-width: 33em;
+		margin: 0 auto;
+		font-size: 1.15em;
+		color: $muted;
+		text-align: center;
+	}
+
+	&-SiteNav {
+		margin: 3.2rem 0 0;
+		font-size: 1.15em;
+		text-align: center;
+
+		&_Link {
+			color: $black;
+		}
 	}
 }

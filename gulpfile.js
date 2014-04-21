@@ -109,7 +109,7 @@ gulp.task('scripts', function() {
 // LiveReload for images
 gulp.task('images', function() {
   // Only works on PNG, JPEG and GIFs currently
-  return gulp.src(['./src/assets/images/**/*.jpg', './src/assets/images/**/*.png', './src/assets/images/**/*.gif'])
+  return gulp.src(['./src/assets/images/**/*.jpg', './src/assets/images/**/*.png', './src/assets/images/**/*.gif', './src/assets/images/**/*.svg'])
     .pipe($.changed('./serve/assets/images/**/*'))
     .pipe(gulp.dest('./serve/assets/images'))
     .pipe($.size())

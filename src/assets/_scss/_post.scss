@@ -1,0 +1,136 @@
+.posts {
+	margin: 12.8rem 0 0;
+
+	&-Post {
+
+		& + .posts-Post {
+			margin: 6.4rem 0 0;
+		}
+
+		&_Content {
+			& > p {
+				&:first-of-type {
+					font: {
+						weight: 400;
+						size: 1.15em;
+						family: 'Droid Serif';
+					}
+				}
+			}
+
+			h2 {
+				margin: 6.4rem 0 0;
+
+				font: {
+					size: 1.35em;
+					weight: 700;
+					family: 'Droid Serif'
+				}
+			}
+
+			h3 {
+				margin: 3.2rem 0 0;
+				font: {
+					size: 1em;
+					weight: 700;
+				}
+				text-transform: uppercase;
+			}
+
+			blockquote {
+				display: block;
+				position: relative;
+
+				margin: 3.2rem 0 3.2rem 7.5rem;
+				font: {
+					size: 1.25em;
+					weight: 700;
+					family: 'Droid Serif';
+				}
+
+				line-height: 1.25;
+				color: $red;
+
+				&:before {
+					content: '';
+
+					position: absolute;
+					left: -7.5rem;
+					top: 0;
+					width: 6.4rem;
+					height: 5.6rem;
+
+					background: {
+						image: url('/assets/images/quote.svg');
+						size: 100% auto;
+						position: 50% 100%;
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+	&-PostHeader {
+		&_Title {
+			font-size: 2em;
+			font-weight: 400;
+			margin: 0;
+
+			a {
+				color: $black !important;
+			}
+		}
+
+		&_Date {
+			color: $muted;
+
+
+
+		}
+	}
+
+	@media screen and (min-width: 60em) {
+
+
+		.posts {
+			&-PostHeader {
+				position: relative;
+				padding: 0 0 0 25%;
+
+				&_Title {
+
+				}
+
+				&_Date {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 25%;
+					padding: 0 1em 0 0;
+					color: #cccccc;
+					font-size: 2em;
+					text-align: right;
+
+					-webkit-box-sizing:border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+			}
+
+			&-Post {
+
+				& + .posts-Post {
+					margin: 12.8rem 0 0;
+				}
+
+				&_Content {
+					padding: 0 0 0 25%;
+				}
+			}
+		}
+	}
+}
