@@ -7,6 +7,16 @@
 		color: $red;
 		text-align: center;
 		text-transform: capitalize;
+
+		&_HeadShot {
+			display: block;
+			max-width: 128px;
+			margin: 4em auto 0;
+			border: 6px solid #dfdfdf;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+		}
 	}
 
 	&-SiteBlurb {
