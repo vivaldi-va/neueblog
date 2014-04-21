@@ -22,6 +22,11 @@ a:visited {
   color: #00acc5;
   text-decoration: none; }
 
+a:hover,
+a:active,
+a:focus {
+  border-bottom: 1px solid rgba(0, 172, 197, 0.5); }
+
 .highlight {
   background-color: #073642;
   color: #93a1a1;
@@ -259,6 +264,14 @@ a:visited {
     color: #d22602;
     text-align: center;
     text-transform: capitalize; }
+    .header-SiteHeader_HeadShot {
+      display: block;
+      max-width: 128px;
+      margin: 4em auto 0;
+      border: 6px solid #dfdfdf;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
   .header-SiteBlurb {
     display: block;
     max-width: 33em;
@@ -315,26 +328,83 @@ a:visited {
     font-weight: 400;
     margin: 0; }
     .posts-PostHeader_Title a {
-      color: #4f4f4f !important; }
+      color: #4f4f4f !important;
+      border: none; }
   .posts-PostHeader_Date {
     color: #999999; }
-  @media screen and (min-width: 60em) {
-    .posts .posts-PostHeader {
-      position: relative;
-      padding: 0 0 0 25%; }
-      .posts .posts-PostHeader_Date {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 25%;
-        padding: 0 1em 0 0;
-        color: #cccccc;
-        font-size: 2em;
-        text-align: right;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-    .posts .posts-Post + .posts-Post {
-      margin: 12.8rem 0 0; }
-    .posts .posts-Post_Content {
-      padding: 0 0 0 25%; } }
+  .posts-PostFooter_MoreButton {
+    display: block;
+    margin: 3.2rem 0 0;
+    padding: 0.5em 1em;
+    background: #d22602;
+    color: white !important;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+    .posts-PostFooter_MoreButton:hover, .posts-PostFooter_MoreButton:active, .posts-PostFooter_MoreButton:focus {
+      background: #fd340a;
+      border: none; }
+
+.related {
+  margin: 12.8rem 0 12.8rem 25%; }
+  .related-Title {
+    margin: 0 0 3.2rem;
+    font-size: 1.5em;
+    font-family: 'Droid Serif';
+    font-weight: 700; }
+  .related-PostList {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .related-PostList_Item {
+      float: left;
+      width: 33%;
+      padding: 0 2em 0 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .related-PostList_Item-title {
+        margin: 0;
+        font-size: 1em; }
+      .related-PostList_Item-date {
+        color: #999999;
+        font-weight: 700; }
+
+@media screen and (min-width: 60em) {
+  .posts-PostHeader {
+    position: relative;
+    padding: 0 0 0 25%; }
+    .posts-PostHeader_Date {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25%;
+      padding: 0 1em 0 0;
+      color: #cccccc;
+      font-size: 2em;
+      text-align: right;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+  .posts-Post + .posts-Post {
+    margin: 12.8rem 0 0; }
+  .posts-Post_Content {
+    padding: 0 0 0 25%; }
+  .posts-PostFooter_MoreButton {
+    display: inline-block;
+    width: auto;
+    margin-top: 1em;
+    margin-left: 25%; } }
+.pagination {
+  float: left;
+  width: 100%;
+  margin: 12.8rem 0 2em; }
+  .pagination-Item {
+    display: inline-block; }
+    .pagination-Item.disabled {
+      color: #999999; }
+    .pagination-Item.newer {
+      float: left; }
+    .pagination-Item.older {
+      float: right; }

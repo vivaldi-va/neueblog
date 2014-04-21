@@ -137,12 +137,14 @@
 		list-style: none;
 
 		&_Item {
+
 			float: left;
 			width: 33%;
-			margin: 0 0 0 2em;
-			&:first-of-type {
-				margin-left: 0;
-			}
+			padding: 0 2em 0 0
+
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
 
 			&-title {
 				margin: 0;

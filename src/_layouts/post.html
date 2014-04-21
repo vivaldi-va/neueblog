@@ -22,12 +22,12 @@ layout: default
 		  <ul class="related-PostList">
 			{% for post in site.related_posts limit:3 %}
 			  <li class="related-PostList_Item">
+				<small class="related-PostList_Item-date">{{ post.date | date_to_string }}</small>
 				<h3 class="related-PostList_Item-title">
 				  <a href="{{ post.url }}">
 					{{ post.title }}
 				  </a>
 				</h3>
-				<small class="related-PostList_Item-date">{{ post.date | date_to_string }}</small>
 			  </li>
 			{% endfor %}
 		  </ul>

@@ -1,0 +1,21 @@
+.pagination {
+	float: left;
+	width: 100%;
+	margin: 12.8rem 0 2em;
+
+	&-Item {
+		display: inline-block;
+
+		&.disabled {
+			color: $muted;
+		}
+
+		&.newer {
+			float: left;
+		}
+
+		&.older {
+			float: right;
+		}
+	}
+}
