@@ -1,5 +1,11 @@
 html {
-	font-size: 10px;
+	font-size: 8px;
+}
+
+@media screen and (min-width: 60em) {
+	html {
+		font-size: 10px;
+	}
 }
 
 body {
