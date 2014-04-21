@@ -2,32 +2,35 @@
 layout: default
 ---
 
+<section class="posts">
+	<div class="wrapper">
+		<article class="posts-Post">
+			<header class="posts-PostHeader">
+				<h1 class="posts-PostHeader_Title">
+					{{ page.title }}
+				</h1>
 
-<article class="posts-Post">
-	<header class="posts-PostHeader">
-		<h1 class="posts-PostHeader_Title">
-			{{ page.title }}
-		</h1>
+				<span class="posts-PostHeader_Date">{{ page.date | date_to_string }}</span>
+			</header>
+			<div class="posts-Post_Content">
+				{{ content }}
+			</div>
+		</article>
 
-		<span class="posts-PostHeader_Date">{{ page.date | date_to_string }}</span>
-	</header>
-	<div class="posts-Post_Content">
-		{{ content }}
+		<div class="related">
+		  <h2 class="related-Title">Related Posts</h2>
+		  <ul class="related-PostList">
+			{% for post in site.related_posts limit:3 %}
+			  <li class="related-PostList_Item">
+				<h3 class="related-PostList_Item-title">
+				  <a href="{{ post.url }}">
+					{{ post.title }}
+				  </a>
+				</h3>
+				<small class="related-PostList_Item-date">{{ post.date | date_to_string }}</small>
+			  </li>
+			{% endfor %}
+		  </ul>
+		</div>
 	</div>
-</article>
-
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+</section>

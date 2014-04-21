@@ -1,3 +1,4 @@
+
 .posts {
 	margin: 12.8rem 0 0;
 
@@ -82,6 +83,7 @@
 
 			a {
 				color: $black !important;
+				border: none;
 			}
 		}
 
@@ -93,43 +95,117 @@
 		}
 	}
 
-	@media screen and (min-width: 60em) {
+	&-PostFooter {
+		&_MoreButton {
+			display: block;
+			margin: 3.2rem 0 0;
+			padding: 0.5em 1em;
+			background: $red;
+
+			color: $white !important;
+
+			text-align: center;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+
+			&:hover,
+			&:active,
+			&:focus {
+				background: lighten($red, 10%);
+				border: none;
+			}
+		}
+	}
+}
 
 
-		.posts {
-			&-PostHeader {
-				position: relative;
-				padding: 0 0 0 25%;
+.related {
+	margin: 12.8rem 0 12.8rem 25%;
+	&-Title {
+		margin: 0 0 3.2rem;
+		font: {
+			size: 1.5em;
+			family: 'Droid Serif';
+			weight: 700;
+		}
+	}
 
-				&_Title {
+	&-PostList {
+		margin: 0;
+		padding: 0;
+		list-style: none;
 
-				}
+		&_Item {
+			float: left;
+			width: 33%;
+			margin: 0 0 0 2em;
+			&:first-of-type {
+				margin-left: 0;
+			}
 
-				&_Date {
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 25%;
-					padding: 0 1em 0 0;
-					color: #cccccc;
-					font-size: 2em;
-					text-align: right;
-
-					-webkit-box-sizing:border-box;
-					-moz-box-sizing: border-box;
-					box-sizing: border-box;
+			&-title {
+				margin: 0;
+				font: {
+					size: 1em;
 				}
 			}
 
-			&-Post {
+			&-date {
+				color: $muted;
+				font-weight: 700;
+			}
+		}
+	}
 
-				& + .posts-Post {
-					margin: 12.8rem 0 0;
-				}
 
-				&_Content {
-					padding: 0 0 0 25%;
-				}
+}
+
+@media screen and (min-width: 60em) {
+
+
+	.posts {
+		&-PostHeader {
+			position: relative;
+			padding: 0 0 0 25%;
+
+			&_Title {
+
+			}
+
+			&_Date {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 25%;
+				padding: 0 1em 0 0;
+				color: #cccccc;
+				font-size: 2em;
+				text-align: right;
+
+				-webkit-box-sizing:border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+		}
+
+		&-Post {
+
+			& + .posts-Post {
+				margin: 12.8rem 0 0;
+			}
+
+			&_Content {
+				padding: 0 0 0 25%;
+			}
+		}
+
+		&-PostFooter {
+			&_MoreButton {
+				display: inline-block;
+				width: auto;
+				margin-top: 1em;
+				margin-left: 25%;
 			}
 		}
 	}
