@@ -5,5 +5,11 @@ body {
 .wrapper {
 	max-width: 1140px;
 	margin: 0 auto;
-	padding: 0 2em;
+	padding: 0 0.5em;
+}
+
+@media screen and (min-width: $mobileBreak) {
+	.wrapper {
+		padding: 0 2em;
+	}
 }

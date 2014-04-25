@@ -2,7 +2,7 @@ html {
 	font-size: 8px;
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: $mobileBreak) {
 	html {
 		font-size: 10px;
 	}
